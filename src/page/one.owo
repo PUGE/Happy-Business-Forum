@@ -1,0 +1,117 @@
+<template lang="pug">
+.one
+  img.soulless.so-0.item-0(width="534", height="283", src="@|one-0.png|")
+  img.soulless.so-1.item-1(width="277", height="99", src="@|one-1.png|")
+  img.soulless.so-2.item-2(width="1339", height="179", src="@|one-2.png|")
+  img.soulless.so-3.item-3(width="379", height="274", src="@|one-3.png|")
+  img.soulless.so-4.item-4(width="203", height="364", src="@|one-4.png|")
+  img.soulless.so-5.item-5(width="422", height="356", src="@|one-5.png|")
+  img.soulless.so-6.item-6(width="473", height="254", src="@|one-6.png|")
+  img.top(src="http://military.people.com.cn/img/MAIN/2017/07/117575/images/jiao.png")
+</template>
+
+<script>
+  module.exports = {
+    created: function () {
+      owo.query('.so-2')[0].style.bottom = -hideHeight - 20 + 'px'
+      owo.query('.so-3')[0].style.bottom = -hideHeight - 20 + 'px'
+      owo.query('.so-4')[0].style.bottom = -hideHeight - 20 + 'px'
+      owo.query('.so-5')[0].style.bottom = -hideHeight - 20 + 'px'
+      owo.query('.so-6')[0].style.bottom = -hideHeight - 20 + 'px'
+      // 动画
+      owo.tool.animate('zoomIn', owo.query('.so-0')[0], 0)
+      owo.tool.animate('fadeIn', owo.query('.so-1')[0], 500)
+      // owo.tool.animate('slideInUp', owo.query('.so-2')[0], 1000)
+      owo.tool.animate('slideInUp', owo.query('.so-3')[0], 1400)
+      owo.tool.animate('slideInUp', owo.query('.so-4')[0], 1600)
+      owo.tool.animate('slideInUp', owo.query('.so-5')[0], 1800)
+      owo.tool.animate('slideInUp', owo.query('.so-6')[0], 2200)
+      owo.tool.touch({
+        el: this.$el,
+        end: function end(e) {
+          if (e.swipe[1] < -100) {
+            owo.go('two', 'moveToTop', 'scaleUp', 'moveToBottom', 'scaleUp', true);
+          }
+        }
+      })
+    }
+  }
+</script>
+
+
+<style lang="less">
+.one {
+  background-image: url('@|one-7.png|');
+}
+.so-0 {
+  position: absolute;
+  left: 110px;
+  top: 243px;
+  z-index: 8;
+}
+.so-1 {
+  position: absolute;
+  left: 240px;
+  top: 811px;
+  z-index: 7;
+}
+.so-5 {
+  position: absolute;
+  left: 16px;
+  z-index: 3;
+}
+.so-3 {
+  position: absolute;
+  left: 141px;
+  z-index: 5;
+}
+.so-6 {
+  position: absolute;
+  left: 502px;
+  z-index: 2;
+}
+.so-2 {
+  position: absolute;
+  left: -118px;
+  z-index: 6;
+}
+.so-4 {
+  position: absolute;
+  left: 229px;
+  z-index: 4;
+}
+.top {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 15%;
+  z-index: 9;
+  -webkit-animation: mouseMove 1.5s ease infinite;
+          animation: mouseMove 1.5s ease infinite;
+}
+
+@-webkit-keyframes mouseMove {
+  0% {
+    transform: translate3d(0px, 0px, 0);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate3d(0px, -40px, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes mouseMove {
+  0% {
+    transform: translate3d(0px, 0px, 0);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate3d(0px, -40px, 0);
+    opacity: 1;
+  }
+}
+</style>

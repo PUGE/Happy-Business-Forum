@@ -1,0 +1,50 @@
+<template lang="pug">
+.two
+  img.soulless.so-3.item-3(width="584", height="50", src="@|two-3.png|")
+  p.soulless.so-4.item-4 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;今年是全面建成小康社会、实现第一个百年奋斗目标的关键之年，“人民美好生活”在党的十九大报告中更是一个高频词。为了顺应人民群众对美好生活的向往，不断增强人民群众的获得感、幸福感、安全感。人民网发挥中央媒体社会责任意识，将于2019年10月18日在北京人民日报社报告厅举办“2019幸福企业论坛”。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;届时将邀请相关主管单位负责人、权威专家学者、企业负责人等各界人士共同探讨“建设幸福企业”等话题，分享建设幸福企业经验，公布“2019建设幸福企业优秀案例”，发布《2019幸福企业报告》。人民网诚挚邀请贵公司领导或相关负责人出席。
+</template>
+
+<script>
+  module.exports = {
+    created: function () {
+      // 动画
+      owo.tool.animate('fadeIn', owo.query('.so-4')[0], 500)
+      owo.tool.touch({
+        el: this.$el,
+        end: function end(e) {
+          if (e.swipe[1] < -100) {
+            owo.go('three', 'moveToTop', 'scaleUp', 'moveToBottom', 'scaleUp', true);
+          } else if (e.swipe[1] > 100) {
+            owo.go('one', 'moveToBottom', 'scaleUp', 'moveToTop', 'scaleUp', true)
+          }
+        }
+      })
+    }
+  }
+</script>
+
+
+<style lang="less">
+.two {
+  background-image: url('@|bg.png|');
+}
+.so-3 {
+  position: absolute;
+  left: 83px;
+  top: 201px;
+  z-index: 3;
+}
+.so-4 {
+  position: absolute;
+  left: 49px;
+  top: 309px;
+  z-index: 2;
+  width: 650px;
+  height: 587px;
+  font-family: 'FZLTXHK';
+  font-size: 27px;
+  line-height: 48px;
+  color: #bc0d00;
+  text-align: justify;
+}
+</style>

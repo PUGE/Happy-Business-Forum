@@ -1,0 +1,162 @@
+<template lang="pug">
+.four
+  img.soulless.so-9.item-9(width="584", height="51", src="@|five-9.png|")
+  input.soulless.so-7.item-7(type="text", style="width:448px; height:75px; background-image: url(@|five-7.png|)", :blur="scrollIntoView()")
+  input.soulless.so-6.item-6(type="text", style="width:448px; height:75px; background-image: url(@|five-6.png|)", :blur="scrollIntoView()")
+  input.soulless.so-5.item-5(type="text", style="width:448px; height:75px; background-image: url(@|five-5.png|)", :blur="scrollIntoView()")
+  input.soulless.so-4.item-4(type="number", style="width:448px; height:75px; background-image: url(@|five-4.png|)", :blur="scrollIntoView()")
+  img.soulless.so-8.item-8(width="548", height="75", src="@|five-8.png|", :tap="sendData")
+  img.soulless.so-3.item-3(width="548", height="201", src="@|five-3.png|")
+  p.soulless.so-2.item-2 联系人：赵花蕾 武敏健
+  p.soulless.so-1.item-1 电话：65935897 15313522896
+  p.soulless.so-0.item-0 邮箱：beijing@people.cn
+</template>
+
+<script>
+  module.exports = {
+    created: function () {
+      owo.tool.touch({
+        el: this.$el,
+        end: function end(e) {
+          if (e.swipe[1] < -100) {
+            owo.tool.toast('已经是最后一页了!', 30)
+          } else if (e.swipe[1] > 100) {
+            owo.go('four', 'moveToBottom', 'scaleUp', 'moveToTop', 'scaleUp', true)
+          }
+        }
+      })
+    },
+    sendData: function () {
+      const name = owo.query('.so-7')[0].value
+      const company = owo.query('.so-6')[0].value
+      const post = owo.query('.so-5')[0].value
+      const phone = owo.query('.so-4')[0].value
+      if (!name) {
+        owo.tool.animate("shake2", owo.query('.so-7')[0])
+        owo.tool.toast('姓名不能为空!', 30)
+        return
+      }
+      if (!company) {
+        owo.tool.animate("shake2", owo.query('.so-6')[0])
+        owo.tool.toast('单位不能为空!', 30)
+        return
+      }
+      if (!post) {
+        owo.tool.animate("shake2", owo.query('.so-5')[0])
+        owo.tool.toast('职位不能为空!', 30)
+        return
+      }
+      if (!phone) {
+        owo.tool.animate("shake2", owo.query('.so-4')[0])
+        owo.tool.toast('手机不能为空!', 30)
+        return
+      }
+      if (phone.length != 11) {
+        owo.tool.animate("shake2", owo.query('.so-4')[0])
+        owo.tool.toast('手机号不正确!', 30)
+        return
+      }
+      $.post('http://miaonaiting.people.com.cn/baoming/Myapp/index.php/Index/add', {
+        name: name,
+        danwei: company,
+        zhiwu: post,
+        tel: phone
+      }, (result) => {
+        if (result.zhuangtai = 'success') {
+          owo.tool.toast('提交成功!', 30)
+        }
+      })
+    }
+  }
+</script>
+
+
+<style lang="less">
+.four {
+  background-image: url('@|bg.png|');
+}
+.so-9 {
+  position: absolute;
+  left: 83px;
+  top: 201px;
+  z-index: 2;
+}
+.so-7 {
+  position: absolute;
+  left: 101px;
+  top: 305px;
+  z-index: 4;
+}
+.so-6 {
+  position: absolute;
+  left: 101px;
+  top: 399px;
+  z-index: 5;
+}
+.so-5 {
+  position: absolute;
+  left: 101px;
+  top: 493px;
+  z-index: 6;
+}
+.so-4 {
+  position: absolute;
+  left: 101px;
+  top: 587px;
+  z-index: 7;
+}
+.so-8 {
+  position: absolute;
+  left: 101px;
+  top: 680px;
+  z-index: 3;
+}
+.so-3 {
+  position: absolute;
+  left: 101px;
+  top: 773px;
+  z-index: 8;
+  opacity: 0.7019607843137254;
+}
+.so-2 {
+  position: absolute;
+  left: 119px;
+  top: 810px;
+  z-index: 9;
+  width: 284px;
+  height: 26px;
+  font-family: 'FZLTHJW--GB1-0';
+  font-size: 27px;
+  color: rgba(255, 255, 255, 1.00);
+  text-align: left;
+}
+.so-1 {
+  position: absolute;
+  left: 120px;
+  top: 859px;
+  z-index: 10;
+  width: 411px;
+  height: 26px;
+  font-family: 'FZLTHJW--GB1-0';
+  font-size: 27px;
+  color: rgba(255, 255, 255, 1.00);
+  text-align: left;
+}
+.so-0 {
+  position: absolute;
+  left: 119px;
+  top: 906px;
+  z-index: 11;
+  width: 332px;
+  height: 29px;
+  font-family: 'FZLTHJW--GB1-0';
+  font-size: 27px;
+  color: rgba(255, 255, 255, 1.00);
+  text-align: left;
+}
+input {
+  border: none;
+  font-size: 28px;
+  padding-left: 100px;
+}
+</style>
