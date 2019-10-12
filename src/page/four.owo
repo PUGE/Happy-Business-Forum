@@ -1,32 +1,36 @@
 <template lang="pug">
 .four
-  img.soulless.so-12.item-12(width="584", height="51", src="@|four-12.png|")
-  img.soulless.so-11.item-11(width="170", height="741", src="@|four-11.png|")
-  img.soulless.so-10.item-10(width="120", height="50", src="@|four-10.png|")
-  img.soulless.so-5.item-5(width="121", height="50", src="@|four-5.png|")
-  img.soulless.so-9.item-9(width="121", height="49", src="@|four-9.png|")
-  img.soulless.so-4.item-4(width="121", height="49", src="@|four-4.png|")
-  img.soulless.so-8.item-8(width="268", height="88", src="@|four-8.png|")
-  img.soulless.so-3.item-3(width="193", height="50", src="@|four-3.png|")
-  img.soulless.so-7.item-7(width="220", height="54", src="@|four-7.png|")
-  img.soulless.so-2.item-2(width="192", height="50", src="@|four-2.png|")
-  img.soulless.so-6.item-6(width="176", height="90", src="@|four-6.png|")
-  img.soulless.so-1.item-1(width="109", height="50", src="@|four-1.png|")
+  img.soulless.so-13.item-13(width="584", height="51", src="@|four-13.png|")
+  img.soulless.so-2.item-2(width="170", height="741", src="@|four-2.png|")
+  img.soulless.so-12.item-12(width="120", height="50", src="@|four-12.png|")
+  img.soulless.so-6.item-6(width="121", height="50", src="@|four-6.png|")
+  img.soulless.so-11.item-11(width="121", height="49", src="@|four-11.png|")
+  img.soulless.so-5.item-5(width="121", height="49", src="@|four-5.png|")
+  img.soulless.so-10.item-10(width="268", height="88", src="@|four-10.png|")
+  img.soulless.so-4.item-4(width="193", height="50", src="@|four-4.png|")
+  img.soulless.so-9.item-9(width="220", height="54", src="@|four-9.png|")
+  img.soulless.so-3.item-3(width="192", height="50", src="@|four-3.png|")
+  img.soulless.so-8.item-8(width="220", height="55", src="@|four-8.png|")
+  img.soulless.so-1.item-1(width="192", height="50", src="@|four-1.png|")
+  img.soulless.so-7.item-7(width="220", height="55", src="@|four-7.png|")
+  img.soulless.so-0.item-0(width="109", height="50", src="@|four-0.png|")
 </template>
 
 <script>
   module.exports = {
     created: function () {
-      owo.tool.animate('fadeInLeft', owo.query('.so-10')[0], 500)
+      owo.tool.animate('fadeInLeft', owo.query('.so-12')[0], 500)
+      owo.tool.animate('fadeInRight', owo.query('.so-6')[0], 800)
+      owo.tool.animate('fadeInLeft', owo.query('.so-11')[0], 500)
       owo.tool.animate('fadeInRight', owo.query('.so-5')[0], 800)
-      owo.tool.animate('fadeInLeft', owo.query('.so-9')[0], 500)
+      owo.tool.animate('fadeInLeft', owo.query('.so-10')[0], 500)
       owo.tool.animate('fadeInRight', owo.query('.so-4')[0], 800)
-      owo.tool.animate('fadeInLeft', owo.query('.so-8')[0], 500)
+      owo.tool.animate('fadeInLeft', owo.query('.so-9')[0], 500)
       owo.tool.animate('fadeInRight', owo.query('.so-3')[0], 800)
-      owo.tool.animate('fadeInLeft', owo.query('.so-7')[0], 500)
-      owo.tool.animate('fadeInRight', owo.query('.so-2')[0], 800)
-      owo.tool.animate('fadeInLeft', owo.query('.so-6')[0], 500)
+      owo.tool.animate('fadeInLeft', owo.query('.so-8')[0], 500)
       owo.tool.animate('fadeInRight', owo.query('.so-1')[0], 800)
+      owo.tool.animate('fadeInLeft', owo.query('.so-7')[0], 500)
+      owo.tool.animate('fadeInRight', owo.query('.so-0')[0], 800)
       owo.tool.touch({
         el: this.$el,
         end: function end(e) {
@@ -46,76 +50,88 @@
 .four {
   background-image: url('@|bg.png|');
 }
-.so-12 {
+.so-13 {
   position: absolute;
   left: 83px;
   top: 201px;
   z-index: 2;
 }
-.so-11 {
+.so-2 {
   position: absolute;
   left: 289px;
-  top: 312px;
-  z-index: 3;
+  top: 332px;
+  z-index: 13;
 }
-.so-10 {
+.so-12 {
   position: absolute;
   left: 161px;
   top: 350px;
-  z-index: 4;
+  z-index: 3;
 }
-.so-5 {
+.so-6 {
   position: absolute;
   left: 466px;
   top: 396px;
   z-index: 9;
 }
-.so-9 {
+.so-11 {
   position: absolute;
   left: 161px;
   top: 459px;
-  z-index: 5;
+  z-index: 4;
 }
-.so-4 {
+.so-5 {
   position: absolute;
   left: 466px;
   top: 511px;
   z-index: 10;
 }
-.so-8 {
+.so-10 {
   position: absolute;
   left: 19px;
-  top: 574px;
+  top: 565px;
+  z-index: 5;
+}
+.so-4 {
+  position: absolute;
+  left: 466px;
+  top: 643px;
+  z-index: 11;
+}
+.so-9 {
+  position: absolute;
+  left: 63px;
+  top: 707px;
   z-index: 6;
 }
 .so-3 {
   position: absolute;
   left: 466px;
-  top: 671px;
-  z-index: 11;
-}
-.so-7 {
-  position: absolute;
-  left: 63px;
-  top: 737px;
-  z-index: 7;
-}
-.so-2 {
-  position: absolute;
-  left: 466px;
-  top: 801px;
+  top: 771px;
   z-index: 12;
 }
-.so-6 {
+.so-8 {
   position: absolute;
-  left: 106px;
-  top: 868px;
-  z-index: 8;
+  left: 63px;
+  top: 833px;
+  z-index: 7;
 }
 .so-1 {
   position: absolute;
   left: 466px;
-  top: 958px;
-  z-index: 13;
+  top: 893px;
+  z-index: 14;
+}
+.so-7 {
+  position: absolute;
+  left: 63px;
+  top: 960px;
+  z-index: 8;
+}
+.so-0 {
+  position: absolute;
+  left: 467px;
+  top: 1016px;
+  z-index: 15;
 }
 </style>

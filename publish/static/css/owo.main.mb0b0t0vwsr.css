@@ -171,88 +171,102 @@ li {
   background-image: url('../resource/bg.png');
 }
 
-.page-four .so-12 {
+.page-four .so-13 {
   position: absolute;
   left: 83px;
   top: 201px;
   z-index: 2;
 }
 
-.page-four .so-11 {
+.page-four .so-2 {
   position: absolute;
   left: 289px;
-  top: 312px;
-  z-index: 3;
+  top: 332px;
+  z-index: 13;
 }
 
-.page-four .so-10 {
+.page-four .so-12 {
   position: absolute;
   left: 161px;
   top: 350px;
-  z-index: 4;
+  z-index: 3;
 }
 
-.page-four .so-5 {
+.page-four .so-6 {
   position: absolute;
   left: 466px;
   top: 396px;
   z-index: 9;
 }
 
-.page-four .so-9 {
+.page-four .so-11 {
   position: absolute;
   left: 161px;
   top: 459px;
-  z-index: 5;
+  z-index: 4;
 }
 
-.page-four .so-4 {
+.page-four .so-5 {
   position: absolute;
   left: 466px;
   top: 511px;
   z-index: 10;
 }
 
-.page-four .so-8 {
+.page-four .so-10 {
   position: absolute;
   left: 19px;
-  top: 574px;
+  top: 565px;
+  z-index: 5;
+}
+
+.page-four .so-4 {
+  position: absolute;
+  left: 466px;
+  top: 643px;
+  z-index: 11;
+}
+
+.page-four .so-9 {
+  position: absolute;
+  left: 63px;
+  top: 707px;
   z-index: 6;
 }
 
 .page-four .so-3 {
   position: absolute;
   left: 466px;
-  top: 671px;
-  z-index: 11;
-}
-
-.page-four .so-7 {
-  position: absolute;
-  left: 63px;
-  top: 737px;
-  z-index: 7;
-}
-
-.page-four .so-2 {
-  position: absolute;
-  left: 466px;
-  top: 801px;
+  top: 771px;
   z-index: 12;
 }
 
-.page-four .so-6 {
+.page-four .so-8 {
   position: absolute;
-  left: 106px;
-  top: 868px;
-  z-index: 8;
+  left: 63px;
+  top: 833px;
+  z-index: 7;
 }
 
 .page-four .so-1 {
   position: absolute;
   left: 466px;
-  top: 958px;
-  z-index: 13;
+  top: 893px;
+  z-index: 14;
+}
+
+.page-four .so-7 {
+  position: absolute;
+  left: 63px;
+  top: 960px;
+  z-index: 8;
+}
+
+.page-four .so-0 {
+  position: absolute;
+  left: 467px;
+  top: 1016px;
+  z-index: 15;
 }
 .four.page-five {
   background-image: url('../resource/bg.png');
@@ -353,6 +367,9 @@ li {
   padding-left: 100px;
 }
 .loading-wrap.page-loading {
+  z-index: 999;
+  left: 0;
+  top: 0;
   background: #a81911;
   background: linear-gradient(to bottom, #4a0706, #a81911);
 }

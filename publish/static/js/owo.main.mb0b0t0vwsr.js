@@ -1,4 +1,4 @@
-// Fri Oct 11 2019 14:51:53 GMT+0800 (GMT+08:00)
+// Sat Oct 12 2019 16:29:12 GMT+0800 (GMT+08:00)
 
 // 存储页面基本信息
 var owo = {
@@ -35,6 +35,13 @@ owo.script = {
         el: this.$el,
         end: function end(e) {
           if (e.swipe[1] < -100) {
+            if (bgMusic === null) {
+              document.getElementsByClassName('music-box')[0].style.display = 'block'
+              bgMusic = new Audio("./static/resource/bg.mp3");
+              bgMusic.loop = true;
+              bgMusic.play();
+            }
+
             owo.go('two', 'moveToTop', 'scaleUp', 'moveToBottom', 'scaleUp', true);
           }
         }
@@ -74,16 +81,18 @@ owo.script = {
   },
   "four": {
     "created": function created() {
-      owo.tool.animate('fadeInLeft', owo.query('.so-10')[0], 500);
+      owo.tool.animate('fadeInLeft', owo.query('.so-12')[0], 500);
+      owo.tool.animate('fadeInRight', owo.query('.so-6')[0], 800);
+      owo.tool.animate('fadeInLeft', owo.query('.so-11')[0], 500);
       owo.tool.animate('fadeInRight', owo.query('.so-5')[0], 800);
-      owo.tool.animate('fadeInLeft', owo.query('.so-9')[0], 500);
+      owo.tool.animate('fadeInLeft', owo.query('.so-10')[0], 500);
       owo.tool.animate('fadeInRight', owo.query('.so-4')[0], 800);
-      owo.tool.animate('fadeInLeft', owo.query('.so-8')[0], 500);
+      owo.tool.animate('fadeInLeft', owo.query('.so-9')[0], 500);
       owo.tool.animate('fadeInRight', owo.query('.so-3')[0], 800);
-      owo.tool.animate('fadeInLeft', owo.query('.so-7')[0], 500);
-      owo.tool.animate('fadeInRight', owo.query('.so-2')[0], 800);
-      owo.tool.animate('fadeInLeft', owo.query('.so-6')[0], 500);
+      owo.tool.animate('fadeInLeft', owo.query('.so-8')[0], 500);
       owo.tool.animate('fadeInRight', owo.query('.so-1')[0], 800);
+      owo.tool.animate('fadeInLeft', owo.query('.so-7')[0], 500);
+      owo.tool.animate('fadeInRight', owo.query('.so-0')[0], 800);
       owo.tool.touch({
         el: this.$el,
         end: function end(e) {
@@ -207,14 +216,23 @@ owo.script = {
 /* 方法合集 */
 var _owo = {
   /* 运行页面初始化方法 */
-  runCreated: function (pageFunction) {
+  runCreated: function (pageFunction, entryDom) {
     try {
       // console.log(pageFunction)
+      var copyPageFunction = {}
+      for (const key in pageFunction) {
+        if (pageFunction.hasOwnProperty(key)) {
+          const element = pageFunction[key]
+          copyPageFunction[key] = element
+        }
+      }
       // 确保created事件只被执行一次
+      console.log(copyPageFunction)
       if (!pageFunction["_isCreated"]) {
         pageFunction._isCreated = true
         if (pageFunction.created) {
-          pageFunction.created.apply(pageFunction)
+          copyPageFunction.$el = entryDom
+          pageFunction.created.apply(copyPageFunction)
         }
       }
       // 模板插值处理
@@ -222,7 +240,8 @@ var _owo = {
 
       // console.log(pageFunction)
       if (pageFunction.show) {
-        pageFunction.show.apply(pageFunction)
+        copyPageFunction.$el = entryDom
+        pageFunction.show.apply(copyPageFunction)
       }
     }
     catch (e) {
@@ -397,19 +416,22 @@ _owo.handlePage = function (newPageFunction, entryDom) {
   // console.log(entryDom)
   newPageFunction['$el'] = entryDom
   // console.log(newPageFunction)
-  _owo.runCreated(newPageFunction)
+  newPageFunction._isCreated = false
+  _owo.runCreated(newPageFunction, entryDom)
   // debugger
   // 判断页面是否有下属模板,如果有运行所有模板的初始化方法
   for (var key in newPageFunction.template) {
     var templateScript = newPageFunction.template[key]
     // 待修复,临时获取方式,这种方式获取到的dom不准确
-    var childDom = entryDom.querySelectorAll('[template="' + key +'"]')[0]
-    if (!childDom) {
+    var childDom = entryDom.querySelectorAll('[template="' + key +'"]')
+    if (!childDom[0]) {
       console.error('组件丢失:', key)
       continue
     }
-    // 递归处理
-    _owo.handlePage(templateScript, childDom)
+    for (var ind = 0; ind < childDom.length; ind++) {
+      // 递归处理
+      _owo.handlePage(templateScript, childDom[ind])
+    }
   }
 }
 _owo.getarg = function (url) { // 获取URL #后面内容

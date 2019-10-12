@@ -50,3 +50,13 @@ function scrollIntoView () {
 document.body.addEventListener('touchmove', function (e) {
   e.preventDefault() // 阻止默认的处理方式(阻止下拉滑动的效果)
 }, {passive: false})
+
+// 微信加载完毕自动播放音乐
+var bgMusic = null
+document.addEventListener("WeixinJSBridgeReady", function () {
+  if (bgMusic === null) {
+    bgMusic = new Audio("./static/resource/bg.mp3")
+    bgMusic.loop = true
+    bgMusic.play()
+  }
+}, false)

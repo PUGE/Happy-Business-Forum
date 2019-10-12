@@ -41,9 +41,37 @@ window.onresize = () => {
 function scrollIntoView () {
   // alert('滚动')
   window.scrollTo(0, 0)
+  setTimeout(() => {
+    getScale()
+  }, 500)
 }
 
 // 阻止微信拖动
 document.body.addEventListener('touchmove', function (e) {
   e.preventDefault() // 阻止默认的处理方式(阻止下拉滑动的效果)
 }, {passive: false})
+
+// 微信加载完毕自动播放音乐
+var bgMusic = null
+var bgMusicIsPlay = false
+document.addEventListener("WeixinJSBridgeReady", function () {
+  if (bgMusic === null) {
+    document.getElementsByClassName('music-box')[0].style.display = 'block'
+    bgMusic = new Audio("./static/resource/bg.mp3")
+    bgMusic.loop = true
+    bgMusic.play()
+  }
+}, false)
+
+document.getElementsByClassName('music-box')[0].ontouchstart = function closeMusic () {
+  if (bgMusic.paused) {
+    bgMusic.play()
+    document.getElementsByClassName('music-play')[0].style.display = 'block'
+    document.getElementsByClassName('music-close')[0].style.display = 'none'
+  } else {
+    bgMusic.pause()
+    document.getElementsByClassName('music-play')[0].style.display = 'none'
+    document.getElementsByClassName('music-close')[0].style.display = 'block'
+  }
+  
+}

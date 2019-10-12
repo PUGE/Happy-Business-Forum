@@ -30,6 +30,11 @@
         el: this.$el,
         end: function end(e) {
           if (e.swipe[1] < -100) {
+            if (bgMusic === null) {
+              bgMusic = new Audio("@|bg.mp3|")
+              bgMusic.loop = true
+              bgMusic.play()
+            }
             owo.go('two', 'moveToTop', 'scaleUp', 'moveToBottom', 'scaleUp', true);
           }
         }

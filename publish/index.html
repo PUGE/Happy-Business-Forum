@@ -21,11 +21,11 @@
   <meta name="browsermode" content="application" />
   <meta name="x5-page-mode" content="app" />
   <!-- 页面主样式文件 -->
-  <link charset="utf-8" rel="stylesheet" href="./static/css/owo.main.xk9725tsl0b.css">
+  <link charset="utf-8" rel="stylesheet" href="./static/css/owo.main.mb0b0t0vwsr.css">
   <!-- 附属css文件 -->
   <link rel="stylesheet" href="./static/css/main.css" charset="utf-8">
-  <link rel="stylesheet" href="./static/css/owo.animation.xk9725tsl0b.css">
-  <link rel="stylesheet" href="./static/css/owo.animate.xk9725tsl0b.css">
+  <link rel="stylesheet" href="./static/css/owo.animation.mb0b0t0vwsr.css">
+  <link rel="stylesheet" href="./static/css/owo.animate.mb0b0t0vwsr.css">
 </head>
 
 <body>
@@ -49,18 +49,20 @@
     <img class="soulless so-2 item-2" width="653" height="738" src="./static/resource/three-2.png">
   </div>
   <div class="four page-four ox" template="four" style="display: none;">
-    <img class="soulless so-12 item-12" width="584" height="51" src="./static/resource/four-12.png">
-    <img class="soulless so-11 item-11" width="170" height="741" src="./static/resource/four-11.png">
-    <img class="soulless so-10 item-10" width="120" height="50" src="./static/resource/four-10.png">
-    <img class="soulless so-5 item-5" width="121" height="50" src="./static/resource/four-5.png">
-    <img class="soulless so-9 item-9" width="121" height="49" src="./static/resource/four-9.png">
-    <img class="soulless so-4 item-4" width="121" height="49" src="./static/resource/four-4.png">
-    <img class="soulless so-8 item-8" width="268" height="88" src="./static/resource/four-8.png">
-    <img class="soulless so-3 item-3" width="193" height="50" src="./static/resource/four-3.png">
-    <img class="soulless so-7 item-7" width="220" height="54" src="./static/resource/four-7.png">
-    <img class="soulless so-2 item-2" width="192" height="50" src="./static/resource/four-2.png">
-    <img class="soulless so-6 item-6" width="176" height="90" src="./static/resource/four-6.png">
-    <img class="soulless so-1 item-1" width="109" height="50" src="./static/resource/four-1.png">
+    <img class="soulless so-13 item-13" width="584" height="51" src="./static/resource/four-13.png">
+    <img class="soulless so-2 item-2" width="170" height="741" src="./static/resource/four-2.png">
+    <img class="soulless so-12 item-12" width="120" height="50" src="./static/resource/four-12.png">
+    <img class="soulless so-6 item-6" width="121" height="50" src="./static/resource/four-6.png">
+    <img class="soulless so-11 item-11" width="121" height="49" src="./static/resource/four-11.png">
+    <img class="soulless so-5 item-5" width="121" height="49" src="./static/resource/four-5.png">
+    <img class="soulless so-10 item-10" width="268" height="88" src="./static/resource/four-10.png">
+    <img class="soulless so-4 item-4" width="193" height="50" src="./static/resource/four-4.png">
+    <img class="soulless so-9 item-9" width="220" height="54" src="./static/resource/four-9.png">
+    <img class="soulless so-3 item-3" width="192" height="50" src="./static/resource/four-3.png">
+    <img class="soulless so-8 item-8" width="220" height="55" src="./static/resource/four-8.png">
+    <img class="soulless so-1 item-1" width="192" height="50" src="./static/resource/four-1.png">
+    <img class="soulless so-7 item-7" width="220" height="55" src="./static/resource/four-7.png">
+    <img class="soulless so-0 item-0" width="109" height="50" src="./static/resource/four-0.png">
   </div>
   <div class="four page-five ox" template="five" style="display: none;">
     <img class="soulless so-9 item-9" width="584" height="51" src="./static/resource/five-9.png"><input class="soulless so-7 item-7" type="text" style="width:448px; height:75px; background-image: url(./static/resource/five-7.png)" :blur="scrollIntoView()"><input class="soulless so-6 item-6" type="text" style="width:448px; height:75px; background-image: url(./static/resource/five-6.png)" :blur="scrollIntoView()"><input class="soulless so-5 item-5" type="text" style="width:448px; height:75px; background-image: url(./static/resource/five-5.png)" :blur="scrollIntoView()"><input class="soulless so-4 item-4" type="number" style="width:448px; height:75px; background-image: url(./static/resource/five-4.png)" :blur="scrollIntoView()">
@@ -76,8 +78,13 @@
       <div class="progress-num">1%</div>
     </div>
   </div>
+  <!-- 音乐播放 -->
+  <div class="music-box">
+    <img class="music-play" id="musicPlay" @click="closeMusic" src="http://www.people.com.cn/img/MAIN/2019/02/119071/images/music-play.png" style="display: inline;" >
+    <img class="music-close" id="musicClose" @click="palyMusic" src="http://www.people.com.cn/img/MAIN/2019/02/119071/images/music-close.png">
+  </div>
   <!-- 框架script文件 -->
-  <script src="./static/js/owo.main.xk9725tsl0b.js" type="text/javascript" charset="UTF-8"></script>
+  <script src="./static/js/owo.main.mb0b0t0vwsr.js" type="text/javascript" charset="UTF-8"></script>
 
   <script src="http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js" type="text/javascript" charset="UTF-8"></script>
   <script src="./static/js/main.js" type="text/javascript" charset="UTF-8"></script>
