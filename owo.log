@@ -1,95 +1,99 @@
-16:29:11.623 INFO  --------------------------- 开始编译 --------------------------- 
-16:29:11.623 INFO  程序运行目录: D:\work\Happy Business Forum 
-16:29:11.623 INFO  首次启动! 
-16:29:11.623 INFO  生成版本号: mb0b0t0vwsr 
-16:29:11.641 INFO  清理资源文件夹: D:\work\Happy Business Forum\dist\static 
-16:29:11.641 INFO  文件夹不存在: D:\work\Happy Business Forum\dist\static 
-16:29:11.642 INFO  创建文件夹: D:\work\Happy Business Forum\dist\static 
-16:29:11.642 INFO  读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html 
-16:29:11.642 DEBUG 读取网页标题: {TAG_14226_TAG} 
-16:29:11.642 DEBUG 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"},{"name":"format-detection","content":"telephone=no, email=no"},{"name":"apple-mobile-web-app-capable","content":"yes"},{"name":"apple-mobile-web-app-status-bar-style","content":"white"},{"name":"renderer","content":"webkit"},{"http-equiv":"X-UA-Compatible","content":"IE=edge,chrome=1"},{"name":"filetype","content":"1"},{"name":"publishedtype","content":"1"},{"name":"pagetype","content":"2"},{"name":"screen-orientation","content":"landscape"},{"name":"x5-orientation","content":"landscape"},{"name":"full-screen","content":"yes"},{"name":"x5-fullscreen","content":"true"},{"name":"browsermode","content":"application"},{"name":"x5-page-mode","content":"app"}] 
-16:29:11.643 DEBUG 模块 one 因名称重复被重命名为 one0 
-16:29:11.643 INFO  开始处理模块: one 
-16:29:12.084 DEBUG 缓存模板: one./src/page/one.owo 
-16:29:12.129 DEBUG 发现 keyframes 规则: mouseMove 
-16:29:12.129 DEBUG 发现 keyframes 规则: mouseMove 
-16:29:12.129 DEBUG 模板one处理用时: 486 毫秒! 
-16:29:12.129 DEBUG 模块 two 因名称重复被重命名为 two0 
-16:29:12.129 INFO  开始处理模块: two 
-16:29:12.143 DEBUG 缓存模板: two./src/page/two.owo 
-16:29:12.146 DEBUG 模板two处理用时: 17 毫秒! 
-16:29:12.146 DEBUG 模块 three 因名称重复被重命名为 three0 
-16:29:12.146 INFO  开始处理模块: three 
-16:29:12.151 DEBUG 缓存模板: three./src/page/three.owo 
-16:29:12.154 DEBUG 模板three处理用时: 8 毫秒! 
-16:29:12.154 DEBUG 模块 four 因名称重复被重命名为 four0 
-16:29:12.154 INFO  开始处理模块: four 
-16:29:12.171 DEBUG 缓存模板: four./src/page/four.owo 
-16:29:12.174 DEBUG 模板four处理用时: 20 毫秒! 
-16:29:12.174 DEBUG 模块 five 因名称重复被重命名为 five0 
-16:29:12.174 INFO  开始处理模块: five 
-16:29:12.194 DEBUG 缓存模板: five./src/page/five.owo 
-16:29:12.199 DEBUG 模板five处理用时: 25 毫秒! 
-16:29:12.199 DEBUG 模块 loading 因名称重复被重命名为 loading0 
-16:29:12.199 INFO  开始处理模块: loading 
-16:29:12.202 DEBUG 缓存模板: loading./src/page/loading.owo 
-16:29:12.205 DEBUG 模板loading处理用时: 6 毫秒! 
-16:29:12.206 INFO  文件夹不存在: D:/work/Happy Business Forum/dist/static/resource 
-16:29:12.206 INFO  创建文件夹: D:/work/Happy Business Forum/dist/static/resource 
-16:29:12.207 DEBUG 忽略文件: D:/work/Happy Business Forum/src/resource/bg.png 
-16:29:12.207 DEBUG 忽略文件: D:/work/Happy Business Forum/src/resource/bg.png 
-16:29:12.207 DEBUG 忽略文件: D:/work/Happy Business Forum/src/resource/bg.png 
-16:29:12.207 DEBUG 处理资源: ["D:/work/Happy Business Forum/src/resource/one-7.png","D:/work/Happy Business Forum/src/resource/bg.png"] 
-16:29:12.207 DEBUG 资源目录: D:/work/Happy Business Forum/dist/static/resource 
-16:29:12.209 DEBUG css中的资源处理完毕! 
-16:29:12.209 DEBUG 使用postcss处理样式，使用了1个插件! 
-16:29:12.254 INFO  文件夹不存在: D:\work\Happy Business Forum\dist\static\css 
-16:29:12.254 INFO  创建文件夹: D:\work\Happy Business Forum\dist\static\css 
-16:29:12.254 INFO  开始处理附属css中的资源 
-16:29:12.255 INFO  附属css中的资源处理完毕! 
-16:29:12.255 INFO  处理字体:{} 
-16:29:12.265 INFO  使用postcss处理完毕! 用时: 56 毫秒 
-16:29:12.265 DEBUG 需要经过特殊处理的css: [[".page-one .one:",".one.page-one:"],[".page-one .one ",".one.page-one "],[".page-one .one{",".one.page-one{"],[".page-one .page-one:",".page-one.page-one:"],[".page-one .page-one ",".page-one.page-one "],[".page-one .page-one{",".page-one.page-one{"],[".page-one div:","div.page-one:"],[".page-one div ","div.page-one "],[".page-one div{","div.page-one{"],[".page-two .two:",".two.page-two:"],[".page-two .two ",".two.page-two "],[".page-two .two{",".two.page-two{"],[".page-two .page-two:",".page-two.page-two:"],[".page-two .page-two ",".page-two.page-two "],[".page-two .page-two{",".page-two.page-two{"],[".page-two div:","div.page-two:"],[".page-two div ","div.page-two "],[".page-two div{","div.page-two{"],[".page-three .three:",".three.page-three:"],[".page-three .three ",".three.page-three "],[".page-three .three{",".three.page-three{"],[".page-three .page-three:",".page-three.page-three:"],[".page-three .page-three ",".page-three.page-three "],[".page-three .page-three{",".page-three.page-three{"],[".page-three div:","div.page-three:"],[".page-three div ","div.page-three "],[".page-three div{","div.page-three{"],[".page-four .four:",".four.page-four:"],[".page-four .four ",".four.page-four "],[".page-four .four{",".four.page-four{"],[".page-four .page-four:",".page-four.page-four:"],[".page-four .page-four ",".page-four.page-four "],[".page-four .page-four{",".page-four.page-four{"],[".page-four div:","div.page-four:"],[".page-four div ","div.page-four "],[".page-four div{","div.page-four{"],[".page-five .four:",".four.page-five:"],[".page-five .four ",".four.page-five "],[".page-five .four{",".four.page-five{"],[".page-five .page-five:",".page-five.page-five:"],[".page-five .page-five ",".page-five.page-five "],[".page-five .page-five{",".page-five.page-five{"],[".page-five div:","div.page-five:"],[".page-five div ","div.page-five "],[".page-five div{","div.page-five{"],[".page-loading .loading-wrap:",".loading-wrap.page-loading:"],[".page-loading .loading-wrap ",".loading-wrap.page-loading "],[".page-loading .loading-wrap{",".loading-wrap.page-loading{"],[".page-loading .page-loading:",".page-loading.page-loading:"],[".page-loading .page-loading ",".page-loading.page-loading "],[".page-loading .page-loading{",".page-loading.page-loading{"],[".page-loading div:","div.page-loading:"],[".page-loading div ","div.page-loading "],[".page-loading div{","div.page-loading{"]] 
-16:29:12.266 INFO  正在处理script! 
-16:29:12.266 INFO  读取文件: D:/work/Happy Business Forum/src/resource/bg.mp3 
-16:29:12.267 DEBUG 忽略文件: D:/work/Happy Business Forum/src/resource/one-7.png 
-16:29:12.267 DEBUG 处理资源: ["D:/work/Happy Business Forum/src/resource/one-0.png","D:/work/Happy Business Forum/src/resource/one-1.png","D:/work/Happy Business Forum/src/resource/one-2.png","D:/work/Happy Business Forum/src/resource/one-3.png","D:/work/Happy Business Forum/src/resource/one-4.png","D:/work/Happy Business Forum/src/resource/one-5.png","D:/work/Happy Business Forum/src/resource/one-6.png"] 
-16:29:12.267 DEBUG 资源目录: D:/work/Happy Business Forum/dist/static/resource 
-16:29:12.268 INFO  工程中包含多个页面! 
-16:29:12.269 INFO  包含有页面切换动画! 
-16:29:12.269 INFO  动画列表: moveToTop,scaleUp,moveToBottom,rotateRightSideFirst,moveFromRight,,delay200,rotateLeftSideFirst,moveFromLeft 
-16:29:12.271 INFO  文件夹不存在: D:\work\Happy Business Forum\dist\static\js 
-16:29:12.272 INFO  创建文件夹: D:\work\Happy Business Forum\dist\static\js 
-16:29:13.026 INFO  js中的资源处理完毕! 
-16:29:13.026 DEBUG 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"},{"name":"main","src":"./src/main.js","resource":true}] 
-16:29:13.027 DEBUG 外部脚本数量: 2 
-16:29:13.027 DEBUG 处理脚本: jquery1.11.0 
-16:29:13.027 DEBUG 网络脚本: jquery1.11.0 
-16:29:13.027 DEBUG 处理脚本: main 
-16:29:13.027 INFO  读取文件: D:\work\Happy Business Forum\src\main.js 
-16:29:13.027 DEBUG 输出scriptData 
-16:29:13.029 ERROR file does not exist: C:\Users\PG\Documents\GitHub\PG\core\animation\.css 
-16:29:13.029 INFO  写文件: D:\work\Happy Business Forum\dist\static\css\owo.animation.mb0b0t0vwsr.css 
-16:29:13.031 INFO  写文件: D:\work\Happy Business Forum\dist\static\css\owo.animate.mb0b0t0vwsr.css 
-16:29:13.031 DEBUG 准备输出html! 
-16:29:13.031 DEBUG 忽略文件: D:/work/Happy Business Forum/src/resource/one-0.png 
-16:29:13.031 DEBUG 忽略文件: D:/work/Happy Business Forum/src/resource/one-1.png 
-16:29:13.031 DEBUG 忽略文件: D:/work/Happy Business Forum/src/resource/one-2.png 
-16:29:13.031 DEBUG 忽略文件: D:/work/Happy Business Forum/src/resource/one-3.png 
-16:29:13.031 DEBUG 忽略文件: D:/work/Happy Business Forum/src/resource/one-4.png 
-16:29:13.031 DEBUG 忽略文件: D:/work/Happy Business Forum/src/resource/one-5.png 
-16:29:13.031 DEBUG 忽略文件: D:/work/Happy Business Forum/src/resource/one-6.png 
-16:29:13.033 DEBUG 处理资源: ["D:/work/Happy Business Forum/src/resource/two-3.png","D:/work/Happy Business Forum/src/resource/three-3.png","D:/work/Happy Business Forum/src/resource/three-2.png","D:/work/Happy Business Forum/src/resource/four-13.png","D:/work/Happy Business Forum/src/resource/four-2.png","D:/work/Happy Business Forum/src/resource/four-12.png","D:/work/Happy Business Forum/src/resource/four-6.png","D:/work/Happy Business Forum/src/resource/four-11.png","D:/work/Happy Business Forum/src/resource/four-5.png","D:/work/Happy Business Forum/src/resource/four-10.png","D:/work/Happy Business Forum/src/resource/four-4.png","D:/work/Happy Business Forum/src/resource/four-9.png","D:/work/Happy Business Forum/src/resource/four-3.png","D:/work/Happy Business Forum/src/resource/four-8.png","D:/work/Happy Business Forum/src/resource/four-1.png","D:/work/Happy Business Forum/src/resource/four-7.png","D:/work/Happy Business Forum/src/resource/four-0.png","D:/work/Happy Business Forum/src/resource/five-9.png","D:/work/Happy Business Forum/src/resource/five-7.png","D:/work/Happy Business Forum/src/resource/five-6.png","D:/work/Happy Business Forum/src/resource/five-5.png","D:/work/Happy Business Forum/src/resource/five-4.png","D:/work/Happy Business Forum/src/resource/five-8.png","D:/work/Happy Business Forum/src/resource/five-3.png"] 
-16:29:13.033 DEBUG 资源目录: D:/work/Happy Business Forum/dist/static/resource 
-16:29:13.034 DEBUG 开始美化html 
-16:29:13.116 INFO  写入文件: D:\work\Happy Business Forum\dist\static\css\owo.main.mb0b0t0vwsr.css 
-16:29:13.116 INFO  主要逻辑文件写出成功! 
-16:29:13.116 INFO  文件写出成功! 
-16:29:13.117 INFO  animation文件写出成功! 
-16:29:13.121 INFO  读取成功: D:\work\Happy Business Forum\src\main.css 
-16:29:13.121 DEBUG 忽略文件: D:/work/Happy Business Forum/src/resource/bg.png 
-16:29:13.122 INFO  读取成功: D:\work\Happy Business Forum\src\main.js 
-16:29:13.459 INFO  写入文件: D:\work\Happy Business Forum\dist\static\css\main.css 
-16:29:13.476 INFO  写入文件: D:\work\Happy Business Forum\dist\static\js\main.js 
-16:29:13.546 INFO  读取成功: D:/work/Happy Business Forum/src/resource/bg.mp3 
-16:29:13.559 INFO  写入文件: D:/work/Happy Business Forum/dist/static/resource/bg.mp3 
+17:05:40.719 INFO  --------------------------- 开始编译 --------------------------- 
+17:05:40.719 INFO  程序运行目录: D:\work\Happy Business Forum 
+17:05:40.719 INFO  首次启动! 
+17:05:40.719 INFO  生成版本号: 85j3dfrnd9e 
+17:05:40.719 INFO  文件夹不存在: D:\work\Happy Business Forum\dist 
+17:05:40.720 INFO  创建文件夹: D:\work\Happy Business Forum\dist 
+17:05:40.720 INFO  文件夹不存在: D:\work\Happy Business Forum\dist\static 
+17:05:40.720 INFO  创建文件夹: D:\work\Happy Business Forum\dist\static 
+17:05:40.720 INFO  读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html 
+17:05:40.720 DEBUG 读取网页标题: {TAG_14226_TAG} 
+17:05:40.720 DEBUG 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"},{"name":"format-detection","content":"telephone=no, email=no"},{"name":"apple-mobile-web-app-capable","content":"yes"},{"name":"apple-mobile-web-app-status-bar-style","content":"white"},{"name":"renderer","content":"webkit"},{"http-equiv":"X-UA-Compatible","content":"IE=edge,chrome=1"},{"name":"filetype","content":"1"},{"name":"publishedtype","content":"1"},{"name":"pagetype","content":"2"},{"name":"screen-orientation","content":"landscape"},{"name":"x5-orientation","content":"landscape"},{"name":"full-screen","content":"yes"},{"name":"x5-fullscreen","content":"true"},{"name":"browsermode","content":"application"},{"name":"x5-page-mode","content":"app"}] 
+17:05:40.721 DEBUG 模块 one 因名称重复被重命名为 one0 
+17:05:40.721 INFO  开始处理模块: one 
+17:05:41.091 DEBUG 缓存模板: one./src/page/one.owo 
+17:05:41.136 DEBUG 发现 keyframes 规则: mouseMove 
+17:05:41.136 DEBUG 发现 keyframes 规则: mouseMove 
+17:05:41.136 DEBUG 模板one处理用时: 415 毫秒! 
+17:05:41.136 DEBUG 模块 two 因名称重复被重命名为 two0 
+17:05:41.136 INFO  开始处理模块: two 
+17:05:41.149 DEBUG 缓存模板: two./src/page/two.owo 
+17:05:41.151 DEBUG 模板two处理用时: 15 毫秒! 
+17:05:41.151 DEBUG 模块 three 因名称重复被重命名为 three0 
+17:05:41.151 INFO  开始处理模块: three 
+17:05:41.157 DEBUG 缓存模板: three./src/page/three.owo 
+17:05:41.159 DEBUG 模板three处理用时: 8 毫秒! 
+17:05:41.159 DEBUG 模块 four 因名称重复被重命名为 four0 
+17:05:41.159 INFO  开始处理模块: four 
+17:05:41.192 DEBUG 缓存模板: four./src/page/four.owo 
+17:05:41.196 DEBUG 模板four处理用时: 37 毫秒! 
+17:05:41.196 DEBUG 模块 five 因名称重复被重命名为 five0 
+17:05:41.196 INFO  开始处理模块: five 
+17:05:41.219 DEBUG 缓存模板: five./src/page/five.owo 
+17:05:41.224 DEBUG 模板five处理用时: 28 毫秒! 
+17:05:41.224 DEBUG 模块 loading 因名称重复被重命名为 loading0 
+17:05:41.224 INFO  开始处理模块: loading 
+17:05:41.227 DEBUG 缓存模板: loading./src/page/loading.owo 
+17:05:41.229 DEBUG 模板loading处理用时: 5 毫秒! 
+17:05:41.230 INFO  文件夹不存在: D:/work/Happy Business Forum/dist/static/resource 
+17:05:41.231 INFO  创建文件夹: D:/work/Happy Business Forum/dist/static/resource 
+17:05:41.231 DEBUG 忽略文件: D:/work/Happy Business Forum/src/resource/bg.png 
+17:05:41.231 DEBUG 忽略文件: D:/work/Happy Business Forum/src/resource/bg.png 
+17:05:41.231 DEBUG 忽略文件: D:/work/Happy Business Forum/src/resource/bg.png 
+17:05:41.232 DEBUG 处理资源: ["D:/work/Happy Business Forum/src/resource/one-7.png","D:/work/Happy Business Forum/src/resource/bg.png"] 
+17:05:41.232 DEBUG 资源目录: D:/work/Happy Business Forum/dist/static/resource 
+17:05:41.234 DEBUG css中的资源处理完毕! 
+17:05:41.234 DEBUG 使用postcss处理样式，使用了1个插件! 
+17:05:41.279 INFO  文件夹不存在: D:\work\Happy Business Forum\dist\static\css 
+17:05:41.279 INFO  创建文件夹: D:\work\Happy Business Forum\dist\static\css 
+17:05:41.279 INFO  开始处理附属css中的资源 
+17:05:41.279 INFO  附属css中的资源处理完毕! 
+17:05:41.279 INFO  处理字体:{} 
+17:05:41.411 INFO  使用postcss处理完毕! 用时: 177 毫秒 
+17:05:41.411 DEBUG 需要经过特殊处理的css: [[".page-one .one:",".one.page-one:"],[".page-one .one ",".one.page-one "],[".page-one .one{",".one.page-one{"],[".page-one .page-one:",".page-one.page-one:"],[".page-one .page-one ",".page-one.page-one "],[".page-one .page-one{",".page-one.page-one{"],[".page-one div:","div.page-one:"],[".page-one div ","div.page-one "],[".page-one div{","div.page-one{"],[".page-two .two:",".two.page-two:"],[".page-two .two ",".two.page-two "],[".page-two .two{",".two.page-two{"],[".page-two .page-two:",".page-two.page-two:"],[".page-two .page-two ",".page-two.page-two "],[".page-two .page-two{",".page-two.page-two{"],[".page-two div:","div.page-two:"],[".page-two div ","div.page-two "],[".page-two div{","div.page-two{"],[".page-three .three:",".three.page-three:"],[".page-three .three ",".three.page-three "],[".page-three .three{",".three.page-three{"],[".page-three .page-three:",".page-three.page-three:"],[".page-three .page-three ",".page-three.page-three "],[".page-three .page-three{",".page-three.page-three{"],[".page-three div:","div.page-three:"],[".page-three div ","div.page-three "],[".page-three div{","div.page-three{"],[".page-four .four:",".four.page-four:"],[".page-four .four ",".four.page-four "],[".page-four .four{",".four.page-four{"],[".page-four .page-four:",".page-four.page-four:"],[".page-four .page-four ",".page-four.page-four "],[".page-four .page-four{",".page-four.page-four{"],[".page-four div:","div.page-four:"],[".page-four div ","div.page-four "],[".page-four div{","div.page-four{"],[".page-five .four:",".four.page-five:"],[".page-five .four ",".four.page-five "],[".page-five .four{",".four.page-five{"],[".page-five .page-five:",".page-five.page-five:"],[".page-five .page-five ",".page-five.page-five "],[".page-five .page-five{",".page-five.page-five{"],[".page-five div:","div.page-five:"],[".page-five div ","div.page-five "],[".page-five div{","div.page-five{"],[".page-loading .loading-wrap:",".loading-wrap.page-loading:"],[".page-loading .loading-wrap ",".loading-wrap.page-loading "],[".page-loading .loading-wrap{",".loading-wrap.page-loading{"],[".page-loading .page-loading:",".page-loading.page-loading:"],[".page-loading .page-loading ",".page-loading.page-loading "],[".page-loading .page-loading{",".page-loading.page-loading{"],[".page-loading div:","div.page-loading:"],[".page-loading div ","div.page-loading "],[".page-loading div{","div.page-loading{"]] 
+17:05:41.412 INFO  正在处理script! 
+17:05:41.412 INFO  读取文件: D:/work/Happy Business Forum/src/resource/bg.mp3 
+17:05:41.413 DEBUG 忽略文件: D:/work/Happy Business Forum/src/resource/one-7.png 
+17:05:41.413 DEBUG 处理资源: ["D:/work/Happy Business Forum/src/resource/one-0.png","D:/work/Happy Business Forum/src/resource/one-1.png","D:/work/Happy Business Forum/src/resource/one-2.png","D:/work/Happy Business Forum/src/resource/one-3.png","D:/work/Happy Business Forum/src/resource/one-4.png","D:/work/Happy Business Forum/src/resource/one-5.png","D:/work/Happy Business Forum/src/resource/one-6.png"] 
+17:05:41.413 DEBUG 资源目录: D:/work/Happy Business Forum/dist/static/resource 
+17:05:41.414 INFO  工程中包含多个页面! 
+17:05:41.415 INFO  包含有页面切换动画! 
+17:05:41.415 INFO  动画列表: moveToTop,scaleUp,moveToBottom,rotateRightSideFirst,moveFromRight,,delay200,rotateLeftSideFirst,moveFromLeft 
+17:05:41.418 INFO  文件夹不存在: D:\work\Happy Business Forum\dist\static\js 
+17:05:41.419 INFO  创建文件夹: D:\work\Happy Business Forum\dist\static\js 
+17:05:41.419 DEBUG 选择将js合并到html中! 
+17:05:42.131 INFO  js中的资源处理完毕! 
+17:05:42.131 INFO  读取文件: C:\Users\PG\Documents\GitHub\PG\core\debug\autoReload.js 
+17:05:42.131 DEBUG 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"},{"name":"main","src":"./src/main.js","resource":true}] 
+17:05:42.131 DEBUG 外部脚本数量: 2 
+17:05:42.131 DEBUG 处理脚本: jquery1.11.0 
+17:05:42.131 DEBUG 网络脚本: jquery1.11.0 
+17:05:42.131 DEBUG 处理脚本: main 
+17:05:42.131 INFO  读取文件: D:\work\Happy Business Forum\src\main.js 
+17:05:42.131 DEBUG 输出scriptData 
+17:05:42.133 ERROR file does not exist: C:\Users\PG\Documents\GitHub\PG\core\animation\.css 
+17:05:42.134 INFO  写文件: D:\work\Happy Business Forum\dist\static\css\owo.animation.css 
+17:05:42.138 INFO  写文件: D:\work\Happy Business Forum\dist\static\css\owo.animate.css 
+17:05:42.138 DEBUG 准备输出html! 
+17:05:42.138 DEBUG 忽略文件: D:/work/Happy Business Forum/src/resource/one-0.png 
+17:05:42.138 DEBUG 忽略文件: D:/work/Happy Business Forum/src/resource/one-1.png 
+17:05:42.138 DEBUG 忽略文件: D:/work/Happy Business Forum/src/resource/one-2.png 
+17:05:42.138 DEBUG 忽略文件: D:/work/Happy Business Forum/src/resource/one-3.png 
+17:05:42.138 DEBUG 忽略文件: D:/work/Happy Business Forum/src/resource/one-4.png 
+17:05:42.138 DEBUG 忽略文件: D:/work/Happy Business Forum/src/resource/one-5.png 
+17:05:42.139 DEBUG 忽略文件: D:/work/Happy Business Forum/src/resource/one-6.png 
+17:05:42.141 DEBUG 处理资源: ["D:/work/Happy Business Forum/src/resource/two-3.png","D:/work/Happy Business Forum/src/resource/three-3.png","D:/work/Happy Business Forum/src/resource/three-2.png","D:/work/Happy Business Forum/src/resource/four-13.png","D:/work/Happy Business Forum/src/resource/four-2.png","D:/work/Happy Business Forum/src/resource/four-12.png","D:/work/Happy Business Forum/src/resource/four-6.png","D:/work/Happy Business Forum/src/resource/four-11.png","D:/work/Happy Business Forum/src/resource/four-5.png","D:/work/Happy Business Forum/src/resource/four-10.png","D:/work/Happy Business Forum/src/resource/four-4.png","D:/work/Happy Business Forum/src/resource/four-9.png","D:/work/Happy Business Forum/src/resource/four-3.png","D:/work/Happy Business Forum/src/resource/four-8.png","D:/work/Happy Business Forum/src/resource/four-1.png","D:/work/Happy Business Forum/src/resource/four-7.png","D:/work/Happy Business Forum/src/resource/four-0.png","D:/work/Happy Business Forum/src/resource/five-9.png","D:/work/Happy Business Forum/src/resource/five-7.png","D:/work/Happy Business Forum/src/resource/five-6.png","D:/work/Happy Business Forum/src/resource/five-5.png","D:/work/Happy Business Forum/src/resource/five-4.png","D:/work/Happy Business Forum/src/resource/five-8.png","D:/work/Happy Business Forum/src/resource/five-3.png"] 
+17:05:42.141 DEBUG 资源目录: D:/work/Happy Business Forum/dist/static/resource 
+17:05:42.144 INFO  发送重新页面需要刷新命令! 
+17:05:42.198 INFO  主要逻辑文件写出成功! 
+17:05:42.198 INFO  文件写出成功! 
+17:05:42.198 INFO  animation文件写出成功! 
+17:05:42.201 INFO  读取成功: D:\work\Happy Business Forum\src\main.css 
+17:05:42.201 DEBUG 忽略文件: D:/work/Happy Business Forum/src/resource/bg.png 
+17:05:42.201 INFO  读取成功: C:\Users\PG\Documents\GitHub\PG\core\debug\autoReload.js 
+17:05:42.201 INFO  读取成功: D:\work\Happy Business Forum\src\main.js 
+17:05:42.472 INFO  写入文件: D:\work\Happy Business Forum\dist\static\css\main.css 
+17:05:42.485 INFO  写入文件: D:\work\Happy Business Forum\dist\static\js\autoReload.js 
+17:05:42.498 INFO  写入文件: D:\work\Happy Business Forum\dist\static\js\main.js 
+17:05:42.572 INFO  读取成功: D:/work/Happy Business Forum/src/resource/bg.mp3 
+17:05:42.590 INFO  写入文件: D:/work/Happy Business Forum/dist/static/resource/bg.mp3 
